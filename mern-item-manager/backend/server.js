@@ -15,6 +15,7 @@ app.use('/api/items', itemRoutes);
 
 // Database Connection & Server Start
 const PORT = process.env.PORT || 5000;
+app.listen(PORT);
 const MONGO_URI = process.env.MONGO_URI;
 
 if (!MONGO_URI) {
